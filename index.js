@@ -126,5 +126,5 @@ app.use(express.static('public'));
 app.use('/', router);
 
 app.listen(port, () => {
-    console.log(`El servidor está funcionando en el puerto http://localhost:${port}`);
+    console.log(`El servidor está funcionando en el puerto https://gs-agb6.onrender.com:${port}`);
 });
