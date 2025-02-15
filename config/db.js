@@ -9,7 +9,7 @@ const db = new Sequelize(
   process.env.DB_PASS,
   {
     host: process.env.DB_HOST,
-    dialect: process.env.DB_DIALECT,
+    dialect: process.env.DB_DIALECT || 'postgres',
     define: {
       timestamps: false
     },
