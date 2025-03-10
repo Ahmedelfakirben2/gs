@@ -14,7 +14,7 @@ db.authenticate()
         console.error('Error al conectar la base de datos:', error);
     });
 
-    const port = process.env.PORT || 3000;
+    const port = process.env.PORT || 4000;
     app.listen(port, () => {
         console.log(`El servidor está funcionando en el puerto ${port}`);
     });
@@ -40,5 +40,5 @@ app.use(express.static('public'));
 app.use('/', router);
 
 app.listen(port, () => {
-    console.log(`El servidor está funcionando en el puerto localhost:${port}`);
+    console.log(`El servidor está funcionando en el puerto https://gs-agb6.onrender.com:${port}`);
 });
